@@ -21,6 +21,12 @@ A prime number is a whole number greater than 1 whose only factors are 1 and its
 Practice to train recursion. Method says whether number is prime or not.
 
 ### Multiples of 3 or 5
-task condition: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Task condition: if we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below 1000.
+
+### 10001st prime
+Task condition: by listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10 001st prime number?
+
