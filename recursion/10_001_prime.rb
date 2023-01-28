@@ -1,13 +1,8 @@
-def prime_by(sequence_number = 6)
-    arr = Array.new
-    number = 0
+def prime_by(sequence_number = 6, number=0)
+    return number if sequence_number == 1 && prime?(number)
 
-    until arr.length == sequence_number do
-        arr << number if prime?(number)
-        number += 1
-    end
-    
-    arr.last
+    p "sequence: #{sequence_number}; number: #{number}"
+    prime?(number) ? prime_by(sequence_number - 1, number + 1) : prime_by(sequence_number, number + 1)
 end
 
 def prime?(number, divider=1)
