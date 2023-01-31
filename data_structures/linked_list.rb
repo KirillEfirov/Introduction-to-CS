@@ -52,6 +52,18 @@ class LinkedList
         @tail.nil? ? "nil" : @tail.data
     end
 
+    def at(index = -1)
+        return "nil" if index < 0 || index > self.size - 1
+
+        current = @head
+
+        index.times do
+            current = current.next
+        end
+
+        return current.data
+    end
+
     def to_s
         current = @head
 
