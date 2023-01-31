@@ -44,6 +44,14 @@ class LinkedList
         return size
     end
 
+    def head
+        @head.nil? ? "nil" : @head.data
+    end
+
+    def tail
+        @tail.nil? ? "nil" : @tail.data
+    end
+
     def to_s
         current = @head
 
