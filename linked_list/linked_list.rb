@@ -133,4 +133,25 @@ class LinkedList
         end
     end
 
+    def insert_at(data, index)
+        return "Error: you selected an index outside of the list" if index > self.size || index < 0
+    
+        if index == self.size
+            self.append(data)
+        elsif index == 0
+            self.prepend(data)
+        else
+            current = @head
+            current_ind = 0
+            new_node = Node.new(data)
+
+            until current_ind == index - 1 do
+                current = current.next
+                current_ind += 1
+            end
+          
+            new_node.next = current.next
+            current.next = new_node
+        end
+      end
 end
