@@ -64,6 +64,22 @@ class LinkedList
         return current.data
     end
 
+    def pop
+        return "nil" if @head.nil?
+
+        current = @head
+
+        until current.next.next.nil? do
+            current = current.next
+        end
+
+        @tail = current
+        poped = current.next
+        current.next = nil
+
+        return poped.data
+    end
+
     def to_s
         current = @head
 
