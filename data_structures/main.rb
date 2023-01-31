@@ -26,7 +26,8 @@ puts "LIST: #{list}
       LIST TAIL: #{list.tail}
       2 INDEX: #{list.at(2)}
       POP: #{list.pop}
-      LIST TAIL: #{list.tail}"
+      LIST TAIL: #{list.tail}
+      CONTAINS?(49): #{list.contains?(49)}"
 
 puts
 
@@ -36,4 +37,5 @@ puts "LIST: #{list2}
       LIST HEAD: #{list2.head}
       LIST TAIL: #{list2.tail}
       1 INDEX: #{list2.at(1)}
-      POP: #{list2.pop}"
+      POP: #{list2.pop}
+      CONTAINS?(1): #{list2.contains?(1)}"
