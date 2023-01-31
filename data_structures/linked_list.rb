@@ -18,6 +18,18 @@ class LinkedList
        end
     end
 
+    def prepend(data)
+        node = Node.new data
+
+        if @head.nil? && @tail.nil?
+            @head = node
+            @tail = node
+        else
+            node.next = @head
+            @head = node
+        end
+    end
+
     def to_s
         current = @head
 
