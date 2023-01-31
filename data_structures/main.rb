@@ -13,7 +13,9 @@ puts "LIST: #{list}
       0 INDEX: #{list.at(0)}
       no parameters INDEX: #{list.at}
       POP: #{list.pop}
-      LIST TAIL: #{list.tail}"
+      LIST TAIL: #{list.tail}
+      FIND(84): #{list.find(84)}
+      FIND(100): #{list.find(100)}"
 
 puts
 
@@ -38,4 +40,5 @@ puts "LIST: #{list2}
       LIST TAIL: #{list2.tail}
       1 INDEX: #{list2.at(1)}
       POP: #{list2.pop}
-      CONTAINS?(1): #{list2.contains?(1)}"
+      CONTAINS?(1): #{list2.contains?(1)}
+      FIND(100): #{list.find(100)}"
