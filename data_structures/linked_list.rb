@@ -95,6 +95,23 @@ class LinkedList
         return true
     end
 
+    def find(data)
+        return "nil" if @head.nil?
+
+        current = @head
+        current_ind = 0
+        loop do
+            if current.nil?
+                return "nil"
+                break
+            end
+            current.data == data ? break : current = current.next
+            current_ind += 1
+        end
+
+        return current_ind
+    end
+
     def to_s
         current = @head
 
