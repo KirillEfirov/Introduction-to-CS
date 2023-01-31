@@ -30,6 +30,20 @@ class LinkedList
         end
     end
 
+    def size
+        current = @head
+        size = 0
+
+        return size if @head.nil? && @tail.nil?
+
+        until current == @tail.next do
+            size += 1
+            current = current.next    
+        end
+
+        return size
+    end
+
     def to_s
         current = @head
 
