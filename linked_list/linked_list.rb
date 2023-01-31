@@ -153,5 +153,25 @@ class LinkedList
             new_node.next = current.next
             current.next = new_node
         end
-      end
+    end
+
+    def remove_at(index)
+        return "Error: you selected an index outside of the list" if index > size || index < 0
+    
+        if index == 0
+            @head = @head.next
+        elsif index == self.size
+            self.pop
+        else
+            current = @head
+            current_ind = 0
+
+            until current_ind == index - 1 do
+                current = current.next
+                current_ind += 1
+            end
+
+            current.next = current.next.next
+        end
+    end
 end
