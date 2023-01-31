@@ -3,6 +3,7 @@ require_relative "node.rb"
 
 list = LinkedList.new
 
+=begin
 list.append 49
 list.append 84
 list.append 4
@@ -42,3 +43,12 @@ puts "LIST: #{list2}
       POP: #{list2.pop}
       CONTAINS?(1): #{list2.contains?(1)}
       FIND(100): #{list.find(100)}"
+=end
+
+list.append 49
+list.append 84
+list.append 4
+
+puts "LIST: #{list}
+      INSERT_AT(1) #{list.insert_at(100, 3)}
+      LIST: #{list}"
