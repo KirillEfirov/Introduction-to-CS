@@ -80,6 +80,21 @@ class LinkedList
         return poped.data
     end
 
+    def contains?(data)
+        current = @head
+
+        loop do
+            if current.nil?
+                return false
+                break
+            end 
+
+            current.data == data ? break : current = current.next
+        end
+
+        return true
+    end
+
     def to_s
         current = @head
 
