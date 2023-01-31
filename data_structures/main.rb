@@ -11,7 +11,9 @@ puts "LIST: #{list}
       LIST HEAD: #{list.head}
       LIST TAIL: #{list.tail}
       0 INDEX: #{list.at(0)}
-      no parameters INDEX: #{list.at}"
+      no parameters INDEX: #{list.at}
+      POP: #{list.pop}
+      LIST TAIL: #{list.tail}"
 
 puts
 
@@ -22,13 +24,16 @@ puts "LIST: #{list}
       LIST SIZE: #{list.size}
       LIST HEAD: #{list.head}
       LIST TAIL: #{list.tail}
-      2 INDEX: #{list.at(2)}"
+      2 INDEX: #{list.at(2)}
+      POP: #{list.pop}
+      LIST TAIL: #{list.tail}"
 
 puts
 
 list2 = LinkedList.new
-puts "LIST: {list2}
+puts "LIST: #{list2}
       LIST SIZE: #{list2.size}
       LIST HEAD: #{list2.head}
       LIST TAIL: #{list2.tail}
-      1 INDEX: #{list2.at(1)}"
+      1 INDEX: #{list2.at(1)}
+      POP: #{list2.pop}"
