@@ -51,4 +51,12 @@ list.append 4
 
 puts "LIST: #{list}
       INSERT_AT(1) #{list.insert_at(100, 3)}
-      LIST: #{list}"
+      INSERT_AT(1) #{list.insert_at(1, 4)}
+      LIST: #{list}
+      Size: #{list.size}
+      REMOVE_AT(1): #{list.remove_at(1)}
+      LIST: #{list}
+      Size: #{list.size}
+      REMOVE_AT(1): #{list.remove_at(1)}
+      LIST: #{list}
+      Size: #{list.size}"
